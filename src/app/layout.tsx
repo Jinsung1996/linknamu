@@ -4,7 +4,10 @@ import "./globals.css";
 
 const gaegu = Gaegu({
   variable: "--font-gaegu",
-  subsets: ["latin", "korean"],
+  // Google은 Gaegu에 "korean" 서브셋을 실제로 제공하지만(한글 표시에 필수),
+  // next/font의 타입 정의에는 이 폰트의 subsets가 "latin"만 등록되어 있어
+  // 타입 단언으로 우회한다. (Vercel 빌드 시 타입 오류 방지용)
+  subsets: ["latin", "korean"] as unknown as Array<"latin">,
   weight: ["400", "700"],
 });
 
