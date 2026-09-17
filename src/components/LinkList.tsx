@@ -7,7 +7,7 @@ type LinkListProps = {
 
 export function LinkList({ links }: LinkListProps) {
   return (
-    <div className="flex w-full flex-col gap-4">
+    <div className="flex w-full flex-col gap-5">
       {links.map((link) => (
         <LinkCard key={link.slug} slug={link.slug} title={link.title} />
       ))}

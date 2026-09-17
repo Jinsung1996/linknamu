@@ -11,12 +11,25 @@ export type ProfileData = {
 };
 
 export const profile: ProfileData = {
-  name: "박진성",
-  bio: "기모찌 딱따구리",
+  name: "근육돼지",
+  bio: "내 목표는 3대 500",
+  avatarUrl: "/pig-avatar.svg",
 };
 
 export const links: LinkItem[] = [
-  { slug: "instagram", title: "Instagram", url: "https://instagram.com" },
-  { slug: "github", title: "GitHub", url: "https://github.com" },
-  { slug: "blog", title: "Blog", url: "https://example.com" },
+  {
+    slug: "instagram",
+    title: "😊 Instagram",
+    url: "https://www.instagram.com/true_voice96",
+  },
+  {
+    slug: "email",
+    title: "📧 Email",
+    url: "mailto:wlstjdp1@naver.com",
+  },
+  {
+    slug: "github",
+    title: "🐙 Github",
+    url: "https://github.com/Jinsung1996",
+  },
 ];

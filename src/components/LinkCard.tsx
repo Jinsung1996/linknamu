@@ -9,7 +9,7 @@ export function LinkCard({ slug, title }: LinkCardProps) {
     // 클릭 수를 부풀릴 수 있어, 일반 <a> 태그로 이동한다.
     <a
       href={`/r/${slug}`}
-      className="flex w-full items-center justify-center rounded-2xl border border-zinc-200 bg-white px-8 py-6 text-2xl font-medium text-zinc-900 shadow-sm transition-colors hover:bg-zinc-50 active:scale-[0.99] dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-50 dark:hover:bg-zinc-800"
+      className="flex w-full items-center justify-center rounded-3xl border border-white/60 bg-white/40 px-8 py-5 text-xl font-bold text-zinc-800 shadow-lg shadow-pink-200/30 backdrop-blur-xl transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/60 hover:shadow-xl active:scale-[0.98] dark:border-white/10 dark:bg-white/5 dark:text-zinc-50 dark:shadow-black/20 dark:hover:bg-white/10"
     >
       {title}
     </a>
